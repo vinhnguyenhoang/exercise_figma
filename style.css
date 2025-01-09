@@ -9,7 +9,7 @@ body {
     line-height: 1.6;
     color: #333;
 }
-
+/* Header */
 header {
     height: 434px;
     background: #926FF6;
@@ -39,7 +39,8 @@ header .navbar nav ul {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 12px;
 }
 
 header .subtitle {
@@ -48,6 +49,11 @@ header .subtitle {
     margin-bottom: 0.5rem;
     font-weight: 700;
 }
+/* About */
+.about {
+    margin: 10rem auto;
+    width: 80vw;
+}
 
 .about-heading {
     font-size: 12px;
@@ -55,14 +61,33 @@ header .subtitle {
     margin-bottom: 0.5rem;
     font-weight: 700;
 }
+.about-title {
+    font-weight: 500;
+    font-size: 24px;
+}
+.about-description {
+    font-weight: 300;
+    font-size: 1rem;
+}
+.btn-play {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    cursor: pointer;
+    color: #F3849F;
+}
 
 header h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 0.5rem;
+    font-weight: 800;
+
 }
 
 header p {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 section.about {
@@ -87,7 +112,7 @@ section.about p {
 }
 
 section.about .play-button {
-    color: #e74c3c;
+    color: #F3849F;
     font-weight: bold;
     cursor: pointer;
 }
@@ -98,17 +123,26 @@ section.about img {
     border-radius: 10px;
 }
 
+/* Services */
 section.services {
-    background: #f8f2fc;
-    padding: 3rem 1rem;
-    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 section.services .service-container {
+    height: 20rem;
+    position: absolute;
+    top: -10rem;
+    background: #ffffff;
+    padding: 3rem 1rem;
+    text-align: center;
+
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
+    gap: 1rem;
+    border-radius: 3px;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
 }
 
 section.services .service {
@@ -118,18 +152,36 @@ section.services .service {
     text-align: center;
     flex: 1;
     max-width: 300px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 section.services .service h3 {
     margin-bottom: 1rem;
-    color: #8e44ad;
+    color: #4F4F4F;
+}
+section.services .service p {
+    color: #4F4F4F;
+    font-weight: 300;
+    font-size: 12px;
 }
 
+/* Portfolio */
 section.portfolio {
-    background: #f8f2fc;
-    padding: 3rem 1rem;
-    text-align: center;
+    background: #F7EEFF;
+    padding: 10rem 1rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.group-title {
+    margin-top: 4rem;
+    width: 80vw;
+    text-align: left;
+}
+.group-title h2 {
+    font-weight: 400;
+    font-size: 24px;
 }
 
 section.portfolio .filter {
@@ -139,29 +191,63 @@ section.portfolio .filter {
 section.portfolio .filter span {
     display: inline-block;
     margin-right: 1rem;
-    color: #8e44ad;
+    color: #828282;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 12px;
+    gap: 26px;
 }
 
 section.portfolio .filter span.active {
+    padding: 5px 18px;
     text-decoration: underline;
+    background: #F3849F;
+    border-radius: 18px;
+    color: #fff;
 }
 
 section.portfolio .grid {
+    width: 80vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
 }
 
 section.portfolio .grid .item {
+    text-align: center;
     background: #fff;
     height: 200px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.item:nth-child(1) {
+    grid-column: span 2; /* Item 1 chiếm 1 cột */
 }
 
+.item:nth-child(2) {
+    grid-column: span 1; /* Item 2 chiếm 2 cột */
+}
+
+.item:nth-child(3) {
+    grid-column: span 1; /* Item 3 chiếm 1 cột */
+}
+
+.item:nth-child(4) {
+    grid-column: span 2; /* Item 4 chiếm 2 cột */
+}
+
+.item:nth-child(5) {
+    grid-column: span 2; /* Item 5 chiếm 1 cột */
+}
+
+.item:nth-child(6) {
+    grid-column: span 1; /* Item 6 chiếm 1 cột */
+}
+
+/* Blog */
 section.blog {
+    margin: auto;
+    width: 80vw;
     padding: 3rem 1rem;
 }
 
@@ -198,10 +284,14 @@ section.blog .post .meta {
     font-size: 12px;
 }
 
+/* Footer */
 footer {
     height: 220px;
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 1rem;
+}
+
+footer p {
+    line-height: 220px;
 }

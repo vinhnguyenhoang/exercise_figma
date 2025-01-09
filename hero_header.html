@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Hero Header</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
 </head>
 <body>
     <header>
@@ -23,13 +27,13 @@
                 </ul>
             </nav>
         </div>
-        
+
         <div class="heading">
             <div class="subtitle">Creative Agency</div>
             <h1 class="title">HERO HEADER</h1>
             <p>The best in town.</p>
         </div>
-        
+
     </header>
 
     <section class="about">
@@ -37,7 +41,10 @@
             <p class="about-heading">About Our Agency</p>
             <h2 class="about-title">We create awesome prototypes, plugins, and templates.</h2>
             <p class="about-description">For instance, whenever I go back to the guest house during the morning to copy out the contract, these gentlemen are always still sitting there eating their breakfasts.</p>
-            <div class="play-button">PLAY VIDEO</div>
+            <div class="btn-play">
+                <span class="material-icons">play_circle</span>
+                <span class="play-button">PLAY VIDEO</span>
+            </div>
         </div>
         <img class="about-image" src="./assets/about-image.png" alt="Placeholder Image">
     </section>
@@ -45,28 +52,33 @@
     <section class="services">
         <div class="service-container">
             <div class="service">
-                <h3>Web Design</h3>
+                <img src="icon" alt="icon" srcset="">
+                <h3>web design</h3>
                 <p>Research, user experience testing, mockups, and prototypes.</p>
             </div>
             <div class="service">
-                <h3>Development</h3>
+                <img src="icon" alt="icon" srcset="">
+                <h3>development</h3>
                 <p>Research, user experience testing, mockups, and prototypes.</p>
             </div>
             <div class="service">
-                <h3>Research</h3>
+                <img src="icon" alt="icon" srcset="">
+                <h3>research</h3>
                 <p>Research, user experience testing, mockups, and prototypes.</p>
             </div>
         </div>
     </section>
 
     <section class="portfolio">
-        <p class="about-heading">Portfolio</p>
-        <h2>Browse Our Projects</h2>
-        <div class="filter">
-            <span class="active">All</span>
-            <span>Web Design</span>
-            <span>Development</span>
-            <span>Research</span>
+        <div class="group-title">
+            <p class="about-heading">Portfolio</p>
+            <h2>Browse Our Projects</h2>
+            <div class="filter">
+                <span class="active">All</span>
+                <span>Web Design</span>
+                <span>Development</span>
+                <span>Research</span>
+            </div>
         </div>
         <div class="grid">
             <div class="item"></div>
@@ -79,7 +91,7 @@
     </section>
 
     <section class="blog">
-        <p class="about-heading">Update & News/p>
+        <p class="about-heading">Update & News</p>
         <h2>Recent Blog Posts</h2>
         <div class="grid">
             <div class="post">
